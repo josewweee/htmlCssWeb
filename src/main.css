@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "et-line";
+  src: url("../resources/et-line-font/fonts/et-line.woff") format("woff"), url("../resources/et-line-font/fonts/et-line.ttf") format("truetype"), url("../resources/et-line-font/fonts/et-line.svg#et-line") format("svg");
+}
+* {
+  font-family: "et-line", sans-serif;
+  box-sizing: border-box;
+}
+
+p {
+  color: gray;
+}
+
+/* 
+1. Main banner
+2. Nav Bar
+3. services
+4. about
+5. team
+6. portfolio
+7. blog
+8. questions
+9. testimonials
+9. contact
+10. footer
+*/
+/* MAIN BANNER */
+#main-banner {
+  background-image: url(../resources/home-bg-2.jpg);
+  background-position: left 50% bottom 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-clip: border-box;
+  width: 100vw;
+  height: 46vh;
+}
+#main-banner .banner-content {
+  text-align: center;
+  padding-top: 10vh;
+  margin-left: 2%;
+}
+#main-banner h2 {
+  color: white;
+}
+#main-banner p {
+  color: white;
+  margin-top: 1rem;
+}
+#main-banner .bg-buttons button {
+  background: none;
+  color: white;
+  font-weight: bold;
+  border: 3px solid white;
+  padding: 0.5rem;
+  width: 10rem;
+  margin-top: 4rem;
+}
+#main-banner .bg-buttons button:hover {
+  background: #ffffff;
+  color: green;
+  border: 3px solid #ffffff;
+  outline: none;
+}
+#main-banner .bg-buttons button:focus {
+  outline: none;
+}
+#main-banner .bg-buttons button:active {
+  background-color: orange;
+  border: none;
+  outline: none;
+  color: white;
+}
+#main-banner .bg-button-2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #main-banner .bg-button-2 {
+    display: inline-block;
+    margin-left: 1rem;
+    background: #17b87e;
+    border: 3px solid #17b87e;
+  }
+  #main-banner .banner-content {
+    padding-top: 10%;
+  }
+}
+
+/* END MAIN BANNER */
+/* NAV BAR */
+.main-header {
+  display: block;
+  position: relative;
+}
+.main-header .header-list--desktop {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .main-header .main-header-inital {
+    padding: 0.2rem;
+    align-items: center;
+  }
+  .main-header .toggle-button {
+    display: none;
+  }
+  .main-header .header-list--mobile {
+    display: none;
+  }
+  .main-header .header-list--desktop {
+    display: flex !important;
+    right: 0;
+    margin-top: 1.3rem;
+    margin-bottom: 0;
+    width: auto;
+  }
+  .main-header .header-list--desktop li {
+    margin-right: 3rem;
+  }
+}
+
+.main-header-inital {
+  display: flex;
+  box-shadow: 0px 3px 2px 0px rgba(132, 123, 123, 0.1);
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-header--title {
+  margin: 0.4rem;
+  margin-left: 4vw;
+  font-weight: bold;
+}
+
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 2vh;
+  margin: 0.4rem;
+  display: block;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 1.5rem;
+  height: 2px;
+  background: green;
+  display: block;
+  margin: 0.3rem 0;
+}
+
+.header-list {
+  list-style: none;
+  margin-top: 4rem;
+  position: relative;
+  width: 100%;
+}
+.header-list li {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.header-list li a {
+  color: gray;
+}
+.header-list li a:focus,
+.header-list li a:hover {
+  color: green;
+  outline: none;
+  text-decoration: none;
+}
+
+/* END NAV BAR */
+/* SERVICES */
+#services {
+  margin-top: 20vh;
+}
+
+.services-introduction {
+  margin-bottom: 3rem;
+}
+.services-introduction h1 {
+  font-weight: bold;
+}
+
+.services-description--tab {
+  margin-bottom: 1.5rem;
+}
+
+.services-description--titles {
+  display: flex;
+}
+.services-description--titles svg {
+  font-size: 2.5rem;
+}
+.services-description--titles .col-1 {
+  margin-right: 10%;
+}
+
+.services-description--paragraph {
+  color: gray;
+  margin-left: 18.9%;
+  padding-left: 15px;
+}
+
+/* END SERVICES */
+/* ABOUT */
+#about {
+  background-color: #f9f9f9;
+  margin-top: 5rem;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 6rem;
+}
+.about-content h1 {
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .about-content {
+    flex-wrap: nowrap;
+  }
+}
+.about-content .about-description {
+  width: 100%;
+}
+.about-content .about-video {
+  width: 100%;
+}
+
+/* END ABOUT */
+
+/*# sourceMappingURL=main.css.map */
