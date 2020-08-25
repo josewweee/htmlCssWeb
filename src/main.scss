@@ -9,8 +9,23 @@
   font-family: "et-line", sans-serif;
   box-sizing: border-box;
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 p {
   color: gray;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.closed {
+  display: none;
+  transition: all 2s;
 }
 
 /* 
@@ -54,6 +69,7 @@ p {
   }
 
   .bg-buttons {
+    margin-top: 2rem;
     button {
       background: none;
       color: white;
@@ -61,7 +77,6 @@ p {
       border: 3px solid white;
       padding: 0.5rem;
       width: 10rem;
-      margin-top: 4rem;
     }
     button:hover {
       background: #ffffff;
@@ -205,9 +220,6 @@ p {
 
 .services-introduction {
   margin-bottom: 3rem;
-  h1 {
-    font-weight: bold;
-  }
 }
 .services-description--tab {
   margin-bottom: 1.5rem;
@@ -236,6 +248,7 @@ p {
 #about {
   background-color: #f9f9f9;
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .about-content {
@@ -245,6 +258,7 @@ p {
 
   h1 {
     font-weight: bold;
+    margin-bottom: 1rem;
   }
 
   @media (min-width: 768px) {
@@ -253,10 +267,272 @@ p {
 
   .about-description {
     width: 100%;
+    margin-bottom: 3rem;
+    @media (min-width: 768px) {
+      margin-right: 3rem;
+    }
   }
 
   .about-video {
     width: 100%;
+    margin-bottom: 4rem;
   }
 }
 /* END ABOUT */
+
+/* TEAM */
+.team-container {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.team-gallery-item {
+  margin-bottom: 2rem;
+  img {
+    width: 100%;
+  }
+
+  p {
+    color: black;
+  }
+}
+
+.team-titles {
+  margin-bottom: 3.5rem;
+}
+/* END TEAM */
+
+/* PORTFOLIO */
+#portfolio {
+  background-color: #f9f9f9;
+  margin-bottom: 10rem;
+  .container {
+    text-align: center;
+    padding-top: 4rem;
+  }
+}
+
+.portfolio-titles {
+  margin-bottom: 4rem;
+}
+
+.portfolio-gallery {
+  padding-bottom: 3rem;
+}
+
+.portfolio-gallery-item {
+  margin-bottom: 1.5rem;
+  img {
+    width: 100%;
+  }
+}
+/* END PORTFOLIO */
+
+/* BLOG */
+#blog {
+  .container {
+    text-align: center;
+  }
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: 768px) {
+    .col-md-6 {
+      max-width: 48%;
+    }
+    .row {
+      justify-content: space-between;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .col-sm-6 {
+      max-width: 48%;
+    }
+
+    .row {
+      justify-content: space-between;
+    }
+  }
+}
+
+.blog-titles {
+  margin-bottom: 4rem;
+  h1 {
+    margin-bottom: 1rem;
+  }
+}
+
+.blog-information-item {
+  background-color: #f9f9f9;
+  margin-bottom: 1.5rem;
+  text-align: start;
+  padding: 3rem;
+  border: 1px solid lightgray;
+  border-radius: 2%;
+
+  h5 {
+    color: gray;
+    font-weight: bold;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+}
+/* END BLOG */
+
+/* QUESTIONS */
+#questions {
+  background-color: #f9f9f9;
+  padding-top: 7rem;
+}
+
+.questions-titles {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.questions-blocks {
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+}
+
+.question-block-item {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 0.6rem;
+  h4 {
+    font-weight: 600;
+    display: inherit;
+  }
+}
+
+.question-item--title {
+  display: inline;
+  i {
+    font-size: 3rem;
+    margin-right: 1.5rem;
+    display: inherit;
+  }
+}
+
+.question-item--accordion {
+  margin-top: 2rem;
+}
+/* END QUESTIONS */
+
+/* TESTIMONIAL */
+
+.testimonial-titles {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.carousel-item--data {
+  display: flex;
+
+  img {
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+  }
+
+  p {
+    text-align: start;
+  }
+}
+
+.carousel-indicators {
+  li {
+    padding-top: 50px;
+  }
+}
+
+.testimonial-item--author {
+  text-align: start;
+  margin-left: 105px;
+  color: black;
+  font-weight: 600;
+}
+
+/* END TESTIMONIAL */
+
+/* CONTACT */
+#contact {
+  background-color: #f9f9f9;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  .container {
+    padding-top: 5rem;
+  }
+
+  //este calculo sale de bootstrap form-group-lg, pero con menos tamano
+  input {
+    height: calc(1.5em + 1rem + 2px);
+    padding: 0.5rem 1rem;
+  }
+
+  form {
+    padding-bottom: 10rem;
+  }
+
+  .form-control {
+    border: 1.5px solid #e6e5e5;
+    background-color: #f9f9f9;
+    color: gray;
+  }
+
+  .form-control::placeholder {
+    color: gray;
+  }
+}
+
+.contact-titles {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.contact-container {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.contact-textarea {
+  padding: 0;
+  @media (min-width: 768px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.contact-button {
+  width: 100%;
+  margin: auto;
+  background-color: rgb(102, 202, 102);
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+
+  @media (min-width: 768px) {
+    width: 60%;
+  }
+}
+
+/* END CONTACT */
+
+/* FOOTER */
+
+/* END FOOTER */
+.main-footer {
+  text-align: center;
+  padding-bottom: 4rem;
+}
