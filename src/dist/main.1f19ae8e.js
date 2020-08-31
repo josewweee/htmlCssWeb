@@ -135,17 +135,22 @@ toggleButton.addEventListener('click', function (event) {
 
 /* QUESTIONS */
 
-var accordionButton = document.querySelectorAll('.question-block-item');
+var accordionButton = document.querySelectorAll('.question-block-item'); //Open and close the accordion ( using 'for' and 'let' to avoid the clousure)
 
 var _loop = function _loop(i) {
   accordionButton[i].addEventListener('click', function () {
+    //switch the selected accordion content to scroll down ( margin + increace height)
     var accordionBlock = accordionButton[i].querySelector('.question-item--accordion');
+    accordionBlock.style.marginTop = '2rem';
+    accordionBlock.style.maxHeight = accordionBlock.scrollHeight + 'px'; //scroll up ( no margin, no max height) the non selected ones
 
-    if (accordionBlock.classList.contains('closed')) {
-      accordionBlock.classList.remove('closed');
-    } else {
-      accordionBlock.classList.add('closed');
-    }
+    accordionButton.forEach(function (button, index) {
+      if (index !== i) {
+        var accordionBlockDi = button.querySelector('.question-item--accordion');
+        accordionBlockDi.style.marginTop = '0';
+        accordionBlockDi.style.maxHeight = '0';
+      }
+    });
   });
 };
 
@@ -156,6 +161,28 @@ for (var i = 0; i < accordionButton.length; i++) {
 
 /* TESTIMONIAL */
 
+
+var carouselAditionalMobileSlides = document.querySelectorAll('.carousel-aditional--mobile');
+var ScreenWidth = window.matchMedia("(min-width: 577px)"); //JS media query
+
+function minWithHandler(width) {
+  if (width.matches) {
+    carouselAditionalMobileSlides.forEach(function (item) {
+      item.classList.remove('carousel-item');
+      item.hidden = true;
+    });
+  } else {
+    carouselAditionalMobileSlides.forEach(function (item) {
+      item.classList.add('carousel-item');
+      item.hidden = false;
+    });
+  }
+} // Call listener function at run time
+
+
+minWithHandler(ScreenWidth); // Attach listener function on state changes
+
+ScreenWidth.addListener(minWithHandler);
 /* END TESTIMONIAL */
 },{}],"../../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -185,7 +212,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60616" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60768" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

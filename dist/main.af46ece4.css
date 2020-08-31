@@ -7,8 +7,18 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 p {
   color: gray;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 /* 
@@ -185,9 +195,6 @@ p {
 .services-introduction {
   margin-bottom: 3rem;
 }
-.services-introduction h1 {
-  font-weight: bold;
-}
 
 .services-description--tab {
   margin-bottom: 1.5rem;
@@ -214,6 +221,7 @@ p {
 #about {
   background-color: #f9f9f9;
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .about-content {
@@ -223,6 +231,7 @@ p {
 }
 .about-content h1 {
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .about-content {
@@ -231,12 +240,113 @@ p {
 }
 .about-content .about-description {
   width: 100%;
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .about-content .about-description {
+    margin-right: 3rem;
+  }
 }
 .about-content .about-video {
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 /* END ABOUT */
+/* TEAM */
+.team-container {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.team-gallery-item {
+  margin-bottom: 2rem;
+}
+.team-gallery-item img {
+  width: 100%;
+}
+.team-gallery-item p {
+  color: black;
+}
+
+.team-titles {
+  margin-bottom: 3.5rem;
+}
+
+/* END TEAM */
+/* PORTFOLIO */
+#portfolio {
+  background-color: #f9f9f9;
+  margin-bottom: 10rem;
+}
+#portfolio .container {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.portfolio-titles {
+  margin-bottom: 4rem;
+}
+
+.portfolio-gallery {
+  padding-bottom: 3rem;
+}
+
+.portfolio-gallery-item {
+  margin-bottom: 1.5rem;
+}
+.portfolio-gallery-item img {
+  width: 100%;
+}
+
+/* END PORTFOLIO */
+/* BLOG */
+#blog .container {
+  text-align: center;
+}
+#blog .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  #blog .col-md-6 {
+    max-width: 48%;
+  }
+  #blog .row {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 576px) {
+  #blog .col-sm-6 {
+    max-width: 48%;
+  }
+  #blog .row {
+    justify-content: space-between;
+  }
+}
+
+.blog-titles {
+  margin-bottom: 4rem;
+}
+.blog-titles h1 {
+  margin-bottom: 1rem;
+}
+
+.blog-information-item {
+  background-color: #f9f9f9;
+  margin-bottom: 1.5rem;
+  text-align: start;
+  padding: 3rem;
+  border: 1px solid lightgray;
+  border-radius: 2%;
+}
+.blog-information-item h5 {
+  color: gray;
+  font-weight: bold;
+}
+
+/* END BLOG */
 
 
 

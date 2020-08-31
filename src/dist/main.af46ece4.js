@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../resources/et-line-font/fonts/et-line.woff":[["et-line.b3a11081.woff","../resources/et-line-font/fonts/et-line.woff"],"../resources/et-line-font/fonts/et-line.woff"],"./../resources/et-line-font/fonts/et-line.ttf":[["et-line.7d1d0fb9.ttf","../resources/et-line-font/fonts/et-line.ttf"],"../resources/et-line-font/fonts/et-line.ttf"],"./../resources/et-line-font/fonts/et-line.svg":[["et-line.827d5095.svg","../resources/et-line-font/fonts/et-line.svg"],"../resources/et-line-font/fonts/et-line.svg"],"./../resources/home-bg-2.jpg":[["home-bg-2.e09e2979.jpg","../resources/home-bg-2.jpg"],"../resources/home-bg-2.jpg"],"_css_loader":"../../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../resources/et-line-font/fonts/et-line.woff":[["et-line.b3a11081.woff","../resources/et-line-font/fonts/et-line.woff"],"../resources/et-line-font/fonts/et-line.woff"],"./../resources/et-line-font/fonts/et-line.ttf":[["et-line.7d1d0fb9.ttf","../resources/et-line-font/fonts/et-line.ttf"],"../resources/et-line-font/fonts/et-line.ttf"],"./../resources/et-line-font/fonts/et-line.svg":[["et-line.827d5095.svg","../resources/et-line-font/fonts/et-line.svg"],"../resources/et-line-font/fonts/et-line.svg"],"./../resources/home-bg-2.jpg":[["home-bg-2.e09e2979.jpg","../resources/home-bg-2.jpg"],"../resources/home-bg-2.jpg"],"./../resources/home-bg.jpg":[["home-bg.4a663b1e.jpg","../resources/home-bg.jpg"],"../resources/home-bg.jpg"],"./../resources/hover-image.jpg":[["hover-image.c51118f7.jpg","../resources/hover-image.jpg"],"../resources/hover-image.jpg"],"_css_loader":"../../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60616" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60768" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
