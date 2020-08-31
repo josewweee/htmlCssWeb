@@ -2,7 +2,7 @@
 /* Fonts */
 @font-face {
   font-family: "et-line";
-  src: url("../resources/et-line-font/fonts/et-line.woff") format("woff"), url("../resources/et-line-font/fonts/et-line.ttf") format("truetype"), url("../resources/et-line-font/fonts/et-line.svg#et-line") format("svg");
+  src: url("/et-line.b3a11081.woff") format("woff"), url("/et-line.7d1d0fb9.ttf") format("truetype"), url("/et-line.827d5095.svg#et-line") format("svg");
 }
 /* Changing bootstrap default grid breakpoints */
 /*!
@@ -9980,7 +9980,7 @@ h4 {
   height: 100%;
 }
 #main-banner .banner-item--1 {
-  background-image: url(../resources/home-bg-2.jpg);
+  background-image: url(/home-bg-2.e09e2979.jpg);
   background-position: left 50% bottom 20%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9989,7 +9989,7 @@ h4 {
   height: 100%;
 }
 #main-banner .banner-item--2 {
-  background-image: url(../resources/home-bg.jpg);
+  background-image: url(/home-bg.4a663b1e.jpg);
   background-position: left 60% bottom 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10444,7 +10444,7 @@ h4 {
 .blog-information-item:hover {
   background: none;
   overflow: hidden;
-  background-image: url("../resources/hover-image.jpg");
+  background-image: url("/hover-image.c51118f7.jpg");
   background-size: cover;
   background-position-y: -20px;
 }
@@ -10629,4 +10629,7 @@ h4 {
 
 /* END FOOTER */
 
-/*# sourceMappingURL=main.css.map */
+
+
+
+/*# sourceMappingURL=/main.af46ece4.css.map */
