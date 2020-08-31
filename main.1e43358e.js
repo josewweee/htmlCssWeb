@@ -117,74 +117,103 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"src/main.js":[function(require,module,exports) {
+/* NAV BAR */
+var toggleButton = document.querySelector('.toggle-button');
+var navOptions = document.querySelector('.header-list--mobile');
+toggleButton.addEventListener('click', function (event) {
+  navOptions.style.display = navOptions.style.display === 'block' ? 'none' : 'block';
+});
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
+function scrollHandler(event) {
+  console.log(event[0].target.id);
+  var allNavButtons = document.querySelectorAll('.header-list--item');
+  allNavButtons.forEach(function (btn) {
+    btn.classList.remove('active');
+  });
+  var navButton = document.querySelector("#header-list--".concat(event[0].target.id));
+  navButton.classList.add('active');
 }
 
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+var myIntersectionObserver = new IntersectionObserver(scrollHandler, {
+  root: document.querySelector('body'),
+  threshold: 0.7
+});
+var bannerSection = document.querySelector('#main-banner');
+var servicesSection = document.querySelector('#services');
+var aboutSection = document.querySelector('#about');
+var teamSection = document.querySelector('#team');
+var portfolioSection = document.querySelector('#portfolio');
+var blogSection = document.querySelector('#blog');
+var contactSection = document.querySelector('#contact');
+myIntersectionObserver.observe(bannerSection);
+myIntersectionObserver.observe(servicesSection);
+myIntersectionObserver.observe(aboutSection);
+myIntersectionObserver.observe(teamSection);
+myIntersectionObserver.observe(portfolioSection);
+myIntersectionObserver.observe(blogSection);
+myIntersectionObserver.observe(contactSection);
+/* END NAV BAR */
 
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
+/* 
 
-  return '/';
-}
 
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
 
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
 
-function updateLink(link) {
-  var newLink = link.cloneNode();
+*/
 
-  newLink.onload = function () {
-    link.remove();
-  };
+/* QUESTIONS */
 
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
+var accordionButton = document.querySelectorAll('.question-block-item'); //Open and close the accordion ( using 'for' and 'let' to avoid the clousure)
 
-var cssTimeout = null;
+var _loop = function _loop(i) {
+  accordionButton[i].addEventListener('click', function () {
+    //switch the selected accordion content to scroll down ( margin + increace height)
+    var accordionBlock = accordionButton[i].querySelector('.question-item--accordion');
+    accordionBlock.style.marginTop = '2rem';
+    accordionBlock.style.maxHeight = accordionBlock.scrollHeight + 'px'; //scroll up ( no margin, no max height) the non selected ones
 
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
+    accordionButton.forEach(function (button, index) {
+      if (index !== i) {
+        var accordionBlockDi = button.querySelector('.question-item--accordion');
+        accordionBlockDi.style.marginTop = '0';
+        accordionBlockDi.style.maxHeight = '0';
       }
-    }
+    });
+  });
+};
 
-    cssTimeout = null;
-  }, 50);
+for (var i = 0; i < accordionButton.length; i++) {
+  _loop(i);
 }
+/* END QUESTIONS */
 
-module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+/* TESTIMONIAL */
+
+
+var carouselAditionalMobileSlides = document.querySelectorAll('.carousel-aditional--mobile');
+var ScreenWidth = window.matchMedia("(min-width: 577px)"); //JS media query
+
+function minWithHandler(width) {
+  if (width.matches) {
+    carouselAditionalMobileSlides.forEach(function (item) {
+      item.classList.remove('carousel-item');
+      item.hidden = true;
+    });
+  } else {
+    carouselAditionalMobileSlides.forEach(function (item) {
+      item.classList.add('carousel-item');
+      item.hidden = false;
+    });
+  }
+} // Call listener function at run time
+
+
+minWithHandler(ScreenWidth); // Attach listener function on state changes
+
+ScreenWidth.addListener(minWithHandler);
+/* END TESTIMONIAL */
+},{}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -388,5 +417,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/index.js.map
+},{}]},{},["../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/main.js"], null)
+//# sourceMappingURL=/main.1e43358e.js.map

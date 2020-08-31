@@ -184,7 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/main.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../resources/et-line-font/fonts/et-line.woff":[["et-line.35cda6d6.woff","resources/et-line-font/fonts/et-line.woff"],"resources/et-line-font/fonts/et-line.woff"],"./../resources/et-line-font/fonts/et-line.ttf":[["et-line.6c5b9196.ttf","resources/et-line-font/fonts/et-line.ttf"],"resources/et-line-font/fonts/et-line.ttf"],"./../resources/et-line-font/fonts/et-line.svg":[["et-line.aa425a5a.svg","resources/et-line-font/fonts/et-line.svg"],"resources/et-line-font/fonts/et-line.svg"],"./../resources/home-bg-2.jpg":[["home-bg-2.f9bef1b1.jpg","resources/home-bg-2.jpg"],"resources/home-bg-2.jpg"],"./../resources/home-bg.jpg":[["home-bg.3c1f16f5.jpg","resources/home-bg.jpg"],"resources/home-bg.jpg"],"./../resources/hover-image.jpg":[["hover-image.1072890c.jpg","resources/hover-image.jpg"],"resources/hover-image.jpg"],"_css_loader":"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -389,4 +394,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/index.js.map
+//# sourceMappingURL=/main.9a83caef.js.map

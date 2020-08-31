@@ -184,7 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"resources/et-line-font/style.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./fonts/et-line.eot":[["et-line.c014f6b2.eot","resources/et-line-font/fonts/et-line.eot"],"resources/et-line-font/fonts/et-line.eot"],"./fonts/et-line.woff":[["et-line.35cda6d6.woff","resources/et-line-font/fonts/et-line.woff"],"resources/et-line-font/fonts/et-line.woff"],"./fonts/et-line.ttf":[["et-line.6c5b9196.ttf","resources/et-line-font/fonts/et-line.ttf"],"resources/et-line-font/fonts/et-line.ttf"],"./fonts/et-line.svg":[["et-line.aa425a5a.svg","resources/et-line-font/fonts/et-line.svg"],"resources/et-line-font/fonts/et-line.svg"],"_css_loader":"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -389,4 +394,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/index.js.map
+//# sourceMappingURL=/style.d587eeec.js.map
