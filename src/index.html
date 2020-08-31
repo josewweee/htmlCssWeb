@@ -530,7 +530,11 @@
           </div>
           <div class="testimonial-carousel">
             <!-- sliders -->
-            <div class="carousel slide" data-ride="carousel">
+            <div
+              class="carousel slide"
+              data-ride="carousel"
+              id="testimonial-carousel"
+            >
               <div class="carousel-inner">
                 <!-- slider 1 -->
                 <div class="carousel-item active" data-interval="1000">
@@ -707,11 +711,23 @@
                 <!-- end slider 5 -->
               </div>
               <ol class="carousel-indicators">
-                <li data-slide-to="0" class="active"></li>
-                <li data-slide-to="1"></li>
-                <li data-slide-to="2"></li>
-                <li class="carousel-indicator-mobile" data-slide-to="3"></li>
-                <li class="carousel-indicator-mobile" data-slide-to="4"></li>
+                <li
+                  data-target="#testimonial-carousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#testimonial-carousel" data-slide-to="1"></li>
+                <li data-target="#testimonial-carousel" data-slide-to="2"></li>
+                <li
+                  data-target="#testimonial-carousel"
+                  class="carousel-indicator-mobile"
+                  data-slide-to="3"
+                ></li>
+                <li
+                  data-target="#testimonial-carousel"
+                  class="carousel-indicator-mobile"
+                  data-slide-to="4"
+                ></li>
               </ol>
             </div>
             <!-- end sliders -->
@@ -803,16 +819,6 @@
     </footer>
     <!-- END FOOTER -->
     <script src="main.js"></script>
-   <!--  <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script> -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 
