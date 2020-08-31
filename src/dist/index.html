@@ -9,20 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- icons -->
     <link rel="stylesheet" href="/style.c1c8340f.css">
-    <!-- bootstrap (uses: slider, containter margins and grid) -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    /> -->
     <!-- custom css -->
     <link rel="stylesheet" href="/main.af46ece4.css">
   <script src="/style.c1c8340f.js"></script><script src="/main.af46ece4.js"></script></head>
   <body>
     <!-- BANNER -->
     <section id="main-banner">
-      <div id="main-baner--carousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <div id="main-baner--carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
         <div class="carousel-inner">
           <!-- slider 1 -->
           <div class="carousel-item active banner-item--1" data-interval="2000">
@@ -70,13 +63,27 @@
           <span class="toggle-button__bar"></span>
         </button>
         <ul class="header-list header-list--desktop">
-          <li><a href="#main-banner">HOME</a></li>
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#team">TEAM</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#blog">BLOG</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li>
+            <a href="#main-banner" class="header-list--item" id="header-list--main-banner">HOME</a>
+          </li>
+          <li>
+            <a href="#services" class="header-list--item" id="header-list--services">SERVICES</a>
+          </li>
+          <li>
+            <a href="#about" class="header-list--item" id="header-list--about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#team" class="header-list--item" id="header-list--team">TEAM</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="header-list--item" id="header-list--portfolio">PORTFOLIO</a>
+          </li>
+          <li>
+            <a href="#blog" class="header-list--item" id="header-list--blog">BLOG</a>
+          </li>
+          <li>
+            <a href="#contact" class="header-list--item" id="header-list--contact">CONTACT</a>
+          </li>
         </ul>
       </div>
 
@@ -492,7 +499,7 @@
           </div>
           <div class="testimonial-carousel">
             <!-- sliders -->
-            <div class="carousel slide" data-ride="carousel">
+            <div class="carousel slide" data-ride="carousel" id="testimonial-carousel">
               <div class="carousel-inner">
                 <!-- slider 1 -->
                 <div class="carousel-item active" data-interval="1000">
@@ -623,11 +630,11 @@
                 <!-- end slider 5 -->
               </div>
               <ol class="carousel-indicators">
-                <li data-slide-to="0" class="active"></li>
-                <li data-slide-to="1"></li>
-                <li data-slide-to="2"></li>
-                <li class="carousel-indicator-mobile" data-slide-to="3"></li>
-                <li class="carousel-indicator-mobile" data-slide-to="4"></li>
+                <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#testimonial-carousel" data-slide-to="1"></li>
+                <li data-target="#testimonial-carousel" data-slide-to="2"></li>
+                <li data-target="#testimonial-carousel" class="carousel-indicator-mobile" data-slide-to="3"></li>
+                <li data-target="#testimonial-carousel" class="carousel-indicator-mobile" data-slide-to="4"></li>
               </ol>
             </div>
             <!-- end sliders -->
@@ -711,12 +718,7 @@
     </footer>
     <!-- END FOOTER -->
     <script src="/main.1f19ae8e.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <!-- <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script> -->
+    <script src="/bootstrap.min.1ff4d686.js"></script>
   </body>
 
   <!-- ICONS -->

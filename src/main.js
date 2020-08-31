@@ -5,6 +5,42 @@ const navOptions = document.querySelector('.header-list--mobile');
 toggleButton.addEventListener('click', (event) => {
     navOptions.style.display = navOptions.style.display === 'block' ? 'none' : 'block';
 })
+
+
+function scrollHandler(event){
+    console.log(event[0].target.id)
+    const allNavButtons = document.querySelectorAll('.header-list--item');
+    allNavButtons.forEach( btn => {
+        btn.classList.remove('active')
+    });
+    const navButton = document.querySelector(`#header-list--${event[0].target.id}`);
+    navButton.classList.add('active');
+    
+}
+
+const myIntersectionObserver = new IntersectionObserver(scrollHandler, {
+    root: document.querySelector('body'),
+    threshold: 0.7
+});
+
+const bannerSection = document.querySelector('#main-banner');
+const servicesSection = document.querySelector('#services');
+const aboutSection = document.querySelector('#about');
+const teamSection = document.querySelector('#team');
+const portfolioSection = document.querySelector('#portfolio');
+const blogSection = document.querySelector('#blog');
+const contactSection = document.querySelector('#contact');
+
+myIntersectionObserver.observe(bannerSection);
+myIntersectionObserver.observe(servicesSection);
+myIntersectionObserver.observe(aboutSection);
+myIntersectionObserver.observe(teamSection);
+myIntersectionObserver.observe(portfolioSection);
+myIntersectionObserver.observe(blogSection);
+myIntersectionObserver.observe(contactSection);
+
+
+
 /* END NAV BAR */
 /* 
 

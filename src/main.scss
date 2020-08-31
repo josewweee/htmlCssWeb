@@ -141,7 +141,7 @@ $main-color: #64c6ae;
   }
 
   .bg-buttons {
-    margin-top: 3rem;
+    margin-top: 2rem;
     a {
       display: inline-block;
       background: none;
@@ -179,12 +179,12 @@ $main-color: #64c6ae;
   @media (max-height: 568px), (max-width: 280px) {
     height: 60vh;
     .bg-buttons {
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
   }
 
   //TABLETS
-  @media (min-width: 576px) {
+  @media (min-width: 577px) {
     //increase sizes
     h1 {
       font-size: 2.2em;
@@ -195,8 +195,10 @@ $main-color: #64c6ae;
     }
     //move margins
     .banner-content {
-      padding-top: 17vh;
       max-width: 500px;
+      @media (min-height: 700px) {
+        padding-top: 17vh;
+      }
     }
 
     .bg-buttons {
@@ -237,7 +239,7 @@ $main-color: #64c6ae;
     display: none !important;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 577px) {
     .main-header-inital {
       padding: 0.2rem;
       align-items: center;
@@ -258,7 +260,7 @@ $main-color: #64c6ae;
       width: auto;
       padding-bottom: 0;
       li {
-        margin-right: 3rem;
+        margin-right: 2rem;
       }
     }
   }
@@ -329,6 +331,11 @@ $main-color: #64c6ae;
     }
   }
 }
+.header-list--item.active {
+  color: $main-color !important;
+  outline: none;
+  text-decoration: none;
+}
 /* END NAV BAR */
 
 /* SERVICES */
@@ -385,14 +392,14 @@ $main-color: #64c6ae;
     margin-bottom: 1rem;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-wrap: nowrap;
   }
 
   .about-description {
     width: 100%;
     margin-bottom: 3rem;
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       margin-right: 3rem;
     }
   }
@@ -550,7 +557,7 @@ $main-color: #64c6ae;
     margin-left: 0;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     .col-md-6 {
       max-width: 48%;
     }
@@ -559,7 +566,7 @@ $main-color: #64c6ae;
     }
   }
 
-  @media (min-width: 576px) {
+  @media (min-width: 577px) {
     .col-sm-6 {
       max-width: 48%;
     }
@@ -752,7 +759,7 @@ $main-color: #64c6ae;
 
 .contact-textarea {
   padding: 0;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -767,7 +774,7 @@ $main-color: #64c6ae;
   padding: 0.8rem;
   border-radius: 5px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 60%;
   }
 }

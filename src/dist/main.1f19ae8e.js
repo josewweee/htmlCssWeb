@@ -124,6 +124,35 @@ var navOptions = document.querySelector('.header-list--mobile');
 toggleButton.addEventListener('click', function (event) {
   navOptions.style.display = navOptions.style.display === 'block' ? 'none' : 'block';
 });
+
+function scrollHandler(event) {
+  console.log(event[0].target.id);
+  var allNavButtons = document.querySelectorAll('.header-list--item');
+  allNavButtons.forEach(function (btn) {
+    btn.classList.remove('active');
+  });
+  var navButton = document.querySelector("#header-list--".concat(event[0].target.id));
+  navButton.classList.add('active');
+}
+
+var myIntersectionObserver = new IntersectionObserver(scrollHandler, {
+  root: document.querySelector('body'),
+  threshold: 0.7
+});
+var bannerSection = document.querySelector('#main-banner');
+var servicesSection = document.querySelector('#services');
+var aboutSection = document.querySelector('#about');
+var teamSection = document.querySelector('#team');
+var portfolioSection = document.querySelector('#portfolio');
+var blogSection = document.querySelector('#blog');
+var contactSection = document.querySelector('#contact');
+myIntersectionObserver.observe(bannerSection);
+myIntersectionObserver.observe(servicesSection);
+myIntersectionObserver.observe(aboutSection);
+myIntersectionObserver.observe(teamSection);
+myIntersectionObserver.observe(portfolioSection);
+myIntersectionObserver.observe(blogSection);
+myIntersectionObserver.observe(contactSection);
 /* END NAV BAR */
 
 /* 
@@ -212,7 +241,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60768" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49945" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
