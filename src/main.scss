@@ -15,6 +15,11 @@ $grid-breakpoints: (
   xl: 1200px,
 );
 
+$container-max-widths: (
+  sm: 640px,
+  md: 1140px,
+);
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 /* Global */
@@ -35,8 +40,10 @@ p {
   color: gray;
 }
 
-h1 {
-  font-weight: bold;
+h1,
+h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
 }
 
 h4 {
@@ -45,6 +52,10 @@ h4 {
 
 .fs1 {
   font-size: 2.5rem;
+}
+
+.hide {
+  display: none;
 }
 
 .custom-icon {
@@ -90,7 +101,7 @@ $main-color: #64c6ae;
 /* END COLORS */
 
 /* MAIN BANNER */
-#main-banner {
+.main-banner-section {
   width: 100vw;
   height: 50vh;
 
@@ -132,7 +143,7 @@ $main-color: #64c6ae;
   h1 {
     color: white;
     font-size: 1.9em;
-    font-weight: bold;
+    font-weight: 900;
   }
 
   p {
@@ -140,13 +151,13 @@ $main-color: #64c6ae;
     margin-top: 1rem;
   }
 
-  .bg-buttons {
+  .banner-buttons {
     margin-top: 2rem;
     a {
       display: inline-block;
       background: none;
       color: white;
-      font-weight: bold;
+      font-weight: 900;
       border: 3px solid white;
       padding: 0.5rem;
       width: 10rem;
@@ -170,7 +181,7 @@ $main-color: #64c6ae;
       outline: none;
       color: white;
     }
-    .bg-button-2 {
+    .banner-button-2 {
       display: none;
     }
   }
@@ -178,7 +189,7 @@ $main-color: #64c6ae;
   //very small celphones like iphone 5/SE or galaxy fold
   @media (max-height: 568px), (max-width: 280px) {
     height: 60vh;
-    .bg-buttons {
+    .banner-buttons {
       margin-top: 1rem;
     }
   }
@@ -201,10 +212,10 @@ $main-color: #64c6ae;
       }
     }
 
-    .bg-buttons {
+    .banner-buttons {
       margin-top: 7%;
       //display Contact Us button
-      .bg-button-2 {
+      .banner-button-2 {
         display: inline-block !important;
         margin-left: 1rem;
         background: $main-color;
@@ -277,7 +288,7 @@ $main-color: #64c6ae;
 .main-header--title {
   margin: 0.4rem;
   margin-left: 4vw;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 //menu hamburguesa
@@ -297,7 +308,7 @@ $main-color: #64c6ae;
   outline: none;
 }
 
-.toggle-button__bar {
+.toggle-button--bar {
   width: 1.5rem;
   height: 2px;
   background: $main-color;
@@ -319,7 +330,7 @@ $main-color: #64c6ae;
 
     a {
       color: gray;
-      font-weight: bold;
+      font-weight: 900;
       font-size: small;
     }
 
@@ -340,7 +351,7 @@ $main-color: #64c6ae;
 
 /* SERVICES */
 
-#services {
+.services-section {
   margin-top: 20vh;
 }
 
@@ -354,12 +365,23 @@ $main-color: #64c6ae;
 .services-description--titles {
   display: flex;
 
-  .fs1 {
-    font-size: 2.5rem;
-  }
-
   .col-1 {
     margin-right: 10%;
+  }
+
+  //TABLETS
+  @media (min-width: 577px) and (max-width: 768px) {
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .col-1 {
+      margin-right: 18%;
+      margin-left: -10%;
+    }
+  }
+
+  .fs1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -376,7 +398,7 @@ $main-color: #64c6ae;
 
 /* ABOUT */
 
-#about {
+.about-section {
   background-color: #f9f9f9;
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -387,8 +409,8 @@ $main-color: #64c6ae;
   flex-wrap: wrap;
   padding-top: 6rem;
 
-  h1 {
-    font-weight: bold;
+  h2 {
+    font-weight: 900;
     margin-bottom: 1rem;
   }
 
@@ -475,7 +497,7 @@ $main-color: #64c6ae;
 /* END TEAM */
 
 /* PORTFOLIO */
-#portfolio {
+.portfolio-section {
   background-color: #f9f9f9;
   margin-bottom: 10rem;
   .container {
@@ -547,7 +569,8 @@ $main-color: #64c6ae;
 /* END PORTFOLIO */
 
 /* BLOG */
-#blog {
+.blog-section {
+  padding-bottom: 4rem;
   .container {
     text-align: center;
   }
@@ -579,7 +602,7 @@ $main-color: #64c6ae;
 
 .blog-titles {
   margin-bottom: 4rem;
-  h1 {
+  h2 {
     margin-bottom: 1rem;
   }
 }
@@ -593,14 +616,21 @@ $main-color: #64c6ae;
   border-radius: 2%;
   transition: background-position-y 2s;
 
-  h5 {
-    color: gray;
-    font-weight: bold;
+  @media (min-width: 577px) and (max-width: 769px) {
+    padding: 2rem;
   }
 
-  p {
+  h5 {
+    color: gray;
+    font-weight: 900;
+  }
+
+  span {
     font-weight: 600;
     font-size: 0.8rem;
+    color: gray;
+    margin-bottom: 1rem;
+    display: block;
   }
 }
 
@@ -617,9 +647,9 @@ $main-color: #64c6ae;
 /* END BLOG */
 
 /* QUESTIONS */
-#questions {
+.questions-section {
   background-color: #f9f9f9;
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 
 .questions-titles {
@@ -716,10 +746,20 @@ $main-color: #64c6ae;
 /* END TESTIMONIAL */
 
 /* CONTACT */
-#contact {
+.contact-section {
   background-color: #f9f9f9;
   margin-top: 10rem;
   margin-bottom: 2rem;
+
+  //TABLETS
+  @media (min-width: 577px) and (max-width: 768px) {
+    .contact-inputs {
+      margin-right: 1rem;
+    }
+    .contact-textarea {
+      margin-left: 1rem;
+    }
+  }
   .container {
     padding-top: 5rem;
   }

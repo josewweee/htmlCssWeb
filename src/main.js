@@ -1,10 +1,10 @@
-import 'bootstrap';
 /* NAV BAR */
 const toggleButton = document.querySelector('.toggle-button');
 const navOptions = document.querySelector('.header-list--mobile');
 
-toggleButton.addEventListener('click', (event) => {
-    navOptions.style.display = navOptions.style.display === 'block' ? 'none' : 'block';
+toggleButton.addEventListener('click', () => {
+    if(navOptions.classList.contains('hide')) navOptions.classList.remove('hide')
+    else navOptions.classList.add('hide')
 })
 
 
@@ -13,7 +13,7 @@ function scrollHandler(event){
     allNavButtons.forEach( btn => {
         btn.classList.remove('active')
     });
-    const navButton = document.querySelector(`#header-list--${event[0].target.id}`);
+    const navButton = document.querySelector(`#header-list-${event[0].target.id}`);
     navButton.classList.add('active');
     
 }
@@ -31,14 +31,12 @@ const portfolioSection = document.querySelector('#portfolio');
 const blogSection = document.querySelector('#blog');
 const contactSection = document.querySelector('#contact');
 
-myIntersectionObserver.observe(bannerSection);
-myIntersectionObserver.observe(servicesSection);
-myIntersectionObserver.observe(aboutSection);
-myIntersectionObserver.observe(teamSection);
-myIntersectionObserver.observe(portfolioSection);
-myIntersectionObserver.observe(blogSection);
-myIntersectionObserver.observe(contactSection);
+const sections = [bannerSection, servicesSection, aboutSection, teamSection,
+                portfolioSection, blogSection, contactSection]
 
+for(let i = 0; i < sections.length; i++){
+    myIntersectionObserver.observe(sections[i]);
+}
 
 
 /* END NAV BAR */

@@ -6,37 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Talos</title>
     <!-- font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet" />
     <!-- icons -->
-    <link rel="stylesheet" href="./resources/et-line-font/style.css" />
+    <link rel="stylesheet" href="resources/et-line-font/style.css" />
     <!-- custom css -->
-    <link rel="stylesheet" href="./src/main.css" />
+    <link rel="stylesheet" href="src/main.css" />
   </head>
   <body>
     <!-- BANNER -->
-    <section id="main-banner">
-      <div
-        id="main-baner--carousel"
-        class="carousel slide carousel-fade"
-        data-ride="carousel"
-        data-pause="false"
-      >
+    <section id="main-banner" class="main-banner-section">
+      <div id="main-baner-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
         <div class="carousel-inner">
           <!-- slider 1 -->
           <div class="carousel-item active banner-item--1" data-interval="2000">
             <div class="banner-content">
               <h1>Genius Web & Talos Inc.</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dui quis elit cursus congue. Morbi finibus ultricies ipsum
-                at lobortis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dui quis elit cursus congue. Morbi
+                finibus ultricies ipsum at lobortis.
               </p>
-              <div class="bg-buttons">
-                <a class="bg-button-1" href="#services">Learn more</a>
-                <a class="bg-button-2" href="#contact">Contact us</a>
+              <div class="banner-buttons">
+                <a class="banner-button-1" href="#services">Learn more</a>
+                <a class="banner-button-2" href="#contact">Contact us</a>
               </div>
             </div>
           </div>
@@ -45,13 +36,12 @@
             <div class="banner-content">
               <h1>Genius Web & Talos Inc.</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dui quis elit cursus congue. Morbi finibus ultricies ipsum
-                at lobortis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dui quis elit cursus congue. Morbi
+                finibus ultricies ipsum at lobortis.
               </p>
-              <div class="bg-buttons">
-                <a class="bg-button-1" href="#services">Learn more</a>
-                <a class="bg-button-2" href="#contact">Contact us</a>
+              <div class="banner-buttons">
+                <a class="banner-button-1" href="#services">Learn more</a>
+                <a class="banner-button-2" href="#contact">Contact us</a>
               </div>
             </div>
           </div>
@@ -66,62 +56,36 @@
       <div class="main-header-inital">
         <h4 class="main-header--title">Talos</h4>
         <button class="toggle-button">
-          <span class="toggle-button__bar"></span>
-          <span class="toggle-button__bar"></span>
-          <span class="toggle-button__bar"></span>
+          <span class="toggle-button--bar"></span>
+          <span class="toggle-button--bar"></span>
+          <span class="toggle-button--bar"></span>
         </button>
         <ul class="header-list header-list--desktop">
           <li>
-            <a
-              href="#main-banner"
-              class="header-list--item"
-              id="header-list--main-banner"
-              >HOME</a
-            >
+            <a href="#main-banner" class="header-list--item" id="header-list-main-banner">HOME</a>
           </li>
           <li>
-            <a
-              href="#services"
-              class="header-list--item"
-              id="header-list--services"
-              >SERVICES</a
-            >
+            <a href="#services" class="header-list--item" id="header-list-services">SERVICES</a>
           </li>
           <li>
-            <a href="#about" class="header-list--item" id="header-list--about"
-              >ABOUT</a
-            >
+            <a href="#about" class="header-list--item" id="header-list-about">ABOUT</a>
           </li>
           <li>
-            <a href="#team" class="header-list--item" id="header-list--team"
-              >TEAM</a
-            >
+            <a href="#team" class="header-list--item" id="header-list-team">TEAM</a>
           </li>
           <li>
-            <a
-              href="#portfolio"
-              class="header-list--item"
-              id="header-list--portfolio"
-              >PORTFOLIO</a
-            >
+            <a href="#portfolio" class="header-list--item" id="header-list-portfolio">PORTFOLIO</a>
           </li>
           <li>
-            <a href="#blog" class="header-list--item" id="header-list--blog"
-              >BLOG</a
-            >
+            <a href="#blog" class="header-list--item" id="header-list-blog">BLOG</a>
           </li>
           <li>
-            <a
-              href="#contact"
-              class="header-list--item"
-              id="header-list--contact"
-              >CONTACT</a
-            >
+            <a href="#contact" class="header-list--item" id="header-list-contact">CONTACT</a>
           </li>
         </ul>
       </div>
 
-      <ul class="header-list header-list--mobile" style="display: none">
+      <ul class="header-list header-list--mobile hide">
         <li><a href="#main-banner">HOME</a></li>
         <li><a href="#services">SERVICES</a></li>
         <li><a href="#about">ABOUT</a></li>
@@ -135,24 +99,18 @@
 
     <main>
       <!-- SERVICES -->
-      <section id="services">
+      <section id="services" class="services-section">
         <div class="container">
           <div class="services-introduction">
-            <h1>What we do</h1>
+            <h2>What we do</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div class="services-description">
             <div class="row">
-              <div
-                class="col-sm-12 col-md-12 col-lg-6 col-xl-6 services-description--tab"
-              >
+              <div class="col-12 col-sm-6 services-description--tab">
                 <div class="services-description--titles">
                   <div class="col-1">
-                    <div
-                      class="fs1"
-                      aria-hidden="true"
-                      data-icon="&#xe001;"
-                    ></div>
+                    <div class="fs1" aria-hidden="true" data-icon="&#xe001;"></div>
                   </div>
                   <div class="col-11">
                     <h4>Brand Identity</h4>
@@ -160,22 +118,15 @@
                 </div>
                 <div class="services-description--paragraph">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam sit amet mollis neque, ut imperdiet elit. Donec at
-                    ante placerat, tincidunt lorem ac, venenatis risus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet mollis neque, ut imperdiet
+                    elit. Donec at ante placerat, tincidunt lorem ac, venenatis risus.
                   </p>
                 </div>
               </div>
-              <div
-                class="col-sm-12 col-md-12 col-lg-6 col-xl-6 services-description--tab"
-              >
+              <div class="col-12 col-sm-6 services-description--tab">
                 <div class="services-description--titles">
                   <div class="col-1">
-                    <div
-                      class="fs1"
-                      aria-hidden="true"
-                      data-icon="&#xe01b;"
-                    ></div>
+                    <div class="fs1" aria-hidden="true" data-icon="&#xe01b;"></div>
                   </div>
                   <div class="col-11">
                     <h4>Web Design</h4>
@@ -184,22 +135,15 @@
                 <div class="services-description--paragraph">
                   <p>
                     Lorem ipsum dolor sit amet,
-                    <span>consectetur adipiscing elit</span>. Aliquam sit amet
-                    mollis neque, ut imperdiet elit. Donec at ante placerat,
-                    tincidunt lorem ac, venenatis risus.
+                    <span>consectetur adipiscing elit</span>. Aliquam sit amet mollis neque, ut imperdiet elit. Donec at
+                    ante placerat, tincidunt lorem ac, venenatis risus.
                   </p>
                 </div>
               </div>
-              <div
-                class="col-sm-12 col-md-12 col-lg-6 col-xl-6 services-description--tab"
-              >
+              <div class="col-12 col-sm-6 services-description--tab">
                 <div class="services-description--titles">
                   <div class="col-1">
-                    <div
-                      class="fs1"
-                      aria-hidden="true"
-                      data-icon="&#xe04b;"
-                    ></div>
+                    <div class="fs1" aria-hidden="true" data-icon="&#xe04b;"></div>
                   </div>
                   <div class="col-11">
                     <h4>Social Marketing</h4>
@@ -207,22 +151,15 @@
                 </div>
                 <div class="services-description--paragraph">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam sit amet mollis neque, ut imperdiet elit. Donec at
-                    ante placerat, tincidunt lorem ac, venenatis risus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet mollis neque, ut imperdiet
+                    elit. Donec at ante placerat, tincidunt lorem ac, venenatis risus.
                   </p>
                 </div>
               </div>
-              <div
-                class="col-sm-12 col-md-12 col-lg-6 col-xl-6 services-description--tab"
-              >
+              <div class="col-12 col-sm-6 services-description--tab">
                 <div class="services-description--titles">
                   <div class="col-1">
-                    <div
-                      class="fs1"
-                      aria-hidden="true"
-                      data-icon="&#xe027;"
-                    ></div>
+                    <div class="fs1" aria-hidden="true" data-icon="&#xe027;"></div>
                   </div>
                   <div class="col-11">
                     <h4>CMS & eCommerce</h4>
@@ -230,9 +167,8 @@
                 </div>
                 <div class="services-description--paragraph">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam sit amet mollis neque, ut imperdiet elit. Donec at
-                    ante placerat, tincidunt lorem ac, venenatis risus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet mollis neque, ut imperdiet
+                    elit. Donec at ante placerat, tincidunt lorem ac, venenatis risus.
                   </p>
                 </div>
               </div>
@@ -243,18 +179,17 @@
       <!-- END SERVICES -->
 
       <!-- ABOUT -->
-      <section id="about">
+      <section id="about" class="about-section">
         <div class="container">
           <div class="about-content">
             <div class="about-description">
-              <h1>Genius Studio</h1>
+              <h2>Genius Studio</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                nec leo eu ex rhoncus volutpat. Nulla suscipit lorem non mauris
-                vestibulum, ac condimentum massa vestibulum. Suspendisse ut
-                ligula lobortis, lobortis turpis in, gravida metus.
-                <br /><br />Proin hendrerit nibh nec imperdiet pretium.
-                Suspendisse molestie massa sit amet porta euismod.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec leo eu ex rhoncus volutpat. Nulla
+                suscipit lorem non mauris vestibulum, ac condimentum massa vestibulum. Suspendisse ut ligula lobortis,
+                lobortis turpis in, gravida metus.
+                <br /><br />Proin hendrerit nibh nec imperdiet pretium. Suspendisse molestie massa sit amet porta
+                euismod.
               </p>
             </div>
             <div class="about-video">
@@ -273,19 +208,16 @@
       <!-- END ABOUT -->
 
       <!-- TEAM -->
-      <section id="team">
+      <section id="team" class="team-section">
         <div class="team-container container">
           <div class="team-titles">
-            <h1>team member</h1>
-            <p>
-              orem ipsum dolor sit amet, consectetur adipiscing elit, Vivamus
-              enim nunc, commodo at magna ut.
-            </p>
+            <h2>team member</h2>
+            <p>orem ipsum dolor sit amet, consectetur adipiscing elit, Vivamus enim nunc, commodo at magna ut.</p>
           </div>
           <div class="team-gallery row">
             <div class="team-gallery-item col-12 col-sm-6 col-md-4">
               <div class="team-gallery-image">
-                <img src="./resources/team_1.jpg" alt="imagen" />
+                <img src="resources/team_1.jpg" alt="team member jonathan doe" />
                 <div class="team-gallery-image--hover">
                   <div class="custom-icon">
                     <svg class="icon icon-facebook">
@@ -314,7 +246,7 @@
             </div>
             <div class="team-gallery-item col-12 col-sm-6 col-md-4">
               <div class="team-gallery-image">
-                <img src="./resources/team_2.jpg" alt="imagen" />
+                <img src="resources/team_2.jpg" alt="team member jenny l martian" />
                 <div class="team-gallery-image--hover">
                   <div class="custom-icon">
                     <svg class="icon icon-facebook">
@@ -343,7 +275,7 @@
             </div>
             <div class="team-gallery-item col-12 col-sm-6 col-md-4">
               <div class="team-gallery-image">
-                <img src="./resources/team_3.jpg" alt="imagen" />
+                <img src="resources/team_3.jpg" alt="imagen" />
                 <div class="team-gallery-image--hover">
                   <div class="custom-icon">
                     <svg class="icon icon-facebook">
@@ -376,18 +308,15 @@
       <!-- END TEAM -->
 
       <!-- PORTFOLIO -->
-      <section id="portfolio">
+      <section id="portfolio" class="portfolio-section">
         <div class="container">
           <div class="portfolio-titles">
-            <h1>Latest Work</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, Vivamus
-              enim nunc.
-            </p>
+            <h2>Latest Work</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Vivamus enim nunc.</p>
           </div>
           <div class="portfolio-gallery row">
             <div class="col-12 col-sm-6 col-md-4 portfolio-gallery-item">
-              <img src="./resources/portfolio-img1.jpg" alt="imagen" />
+              <img src="resources/portfolio-img1.jpg" alt="portfolio image 1" />
               <div class="portfolio-gallery-item--hover">
                 <div class="custom-icon">
                   <svg class="icon icon-link">
@@ -399,7 +328,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 portfolio-gallery-item">
-              <img src="./resources/portfolio-img2.jpg" alt="imagen" />
+              <img src="resources/portfolio-img2.jpg" alt="portfolio image 2" />
               <div class="portfolio-gallery-item--hover">
                 <div class="custom-icon">
                   <svg class="icon icon-link">
@@ -411,7 +340,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 portfolio-gallery-item">
-              <img src="./resources/portfolio-img3.jpg" alt="imagen" />
+              <img src="resources/portfolio-img3.jpg" alt="portfolio image 3" />
               <div class="portfolio-gallery-item--hover">
                 <div class="custom-icon">
                   <svg class="icon icon-link">
@@ -423,7 +352,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 portfolio-gallery-item">
-              <img src="./resources/portfolio-img4.jpg" alt="imagen" />
+              <img src="resources/portfolio-img4.jpg" alt="portfolio image 4" />
               <div class="portfolio-gallery-item--hover">
                 <div class="custom-icon">
                   <svg class="icon icon-link">
@@ -435,7 +364,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 portfolio-gallery-item">
-              <img src="./resources/portfolio-img5.jpg" alt="imagen" />
+              <img src="resources/portfolio-img5.jpg" alt="portfolio image 5" />
               <div class="portfolio-gallery-item--hover">
                 <div class="custom-icon">
                   <svg class="icon icon-link">
@@ -447,7 +376,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 portfolio-gallery-item">
-              <img src="./resources/portfolio-img6.jpg" alt="imagen" />
+              <img src="resources/portfolio-img6.jpg" alt="portfolio image 6" />
               <div class="portfolio-gallery-item--hover">
                 <div class="custom-icon">
                   <svg class="icon icon-link">
@@ -464,36 +393,33 @@
       <!-- END PORTFOLIO -->
 
       <!-- BLOG -->
-      <section id="blog">
+      <section id="blog" class="blog-section">
         <div class="container">
           <div class="blog-titles">
-            <h1>Our Blog</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              enim nunc, commodo at magna ut
-            </p>
+            <h2>Our Blog</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus enim nunc, commodo at magna ut</p>
           </div>
           <div class="blog-information row">
             <div class="col-12 col-sm-12 col-md-6 blog-information-item">
               <div class="blog-information-item--hover-image"></div>
-              <p>Online Bussiness / Dec 9, 2016</p>
+              <span>Online Bussiness / Dec 9, 2016</span>
               <h5>The best way to make Online Bussiness</h5>
-              <p class="blog-information--author">by jonathan Doe</p>
+              <span class="blog-information--author">by jonathan Doe</span>
             </div>
             <div class="col-12 col-sm-12 col-md-6 blog-information-item">
-              <p>Frontend Developer / Dec 9, 2016</p>
+              <span>Frontend Developer / Dec 9, 2016</span>
               <h5>Frontend Developer Vs UI Designer</h5>
-              <p class="blog-information--author">by johnny james</p>
+              <span class="blog-information--author">by johnny james</span>
             </div>
             <div class="col-12 col-sm-6 col-md-6 blog-information-item">
-              <p>Social Marketing / Dec 9, 2016</p>
+              <span>Social Marketing / Dec 9, 2016</span>
               <h5>What is Social Marketing Business</h5>
-              <p class="blog-information--author">by Mary Louis</p>
+              <span class="blog-information--author">by Mary Louis</span>
             </div>
             <div class="col-12 col-sm-6 col-md-6 blog-information-item">
-              <p>Web Design / Dec 9, 2016</p>
+              <span>Web Design / Dec 9, 2016</span>
               <h5>How to become Web Designer</h5>
-              <p class="blog-information--author">by David jenn</p>
+              <span class="blog-information--author">by David jenn</span>
             </div>
           </div>
         </div>
@@ -501,14 +427,11 @@
       <!-- END BLOG -->
 
       <!-- QUESTIONS -->
-      <section id="questions">
+      <section id="questions" class="questions-section">
         <div class="container">
           <div class="questions-titles">
-            <h1>Asked Questions</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              condimentum maximus massa.
-            </p>
+            <h2>Asked Questions</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum maximus massa.</p>
           </div>
           <div class="questions-blocks">
             <div class="question-block-item" type="button">
@@ -518,9 +441,8 @@
               </div>
               <div class="question-item--accordion">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  condimentum maximus massa, non lacinia felis aliquet id.
-                  Suspendisse non diam tincidunt, rhoncus ex eget, maximus nibh.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum maximus massa, non lacinia
+                  felis aliquet id. Suspendisse non diam tincidunt, rhoncus ex eget, maximus nibh.
                 </p>
               </div>
             </div>
@@ -531,9 +453,8 @@
               </div>
               <div class="question-item--accordion">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  condimentum maximus massa, non lacinia felis aliquet id.
-                  Suspendisse non diam tincidunt, rhoncus ex eget, maximus nibh.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum maximus massa, non lacinia
+                  felis aliquet id. Suspendisse non diam tincidunt, rhoncus ex eget, maximus nibh.
                 </p>
               </div>
             </div>
@@ -544,9 +465,8 @@
               </div>
               <div class="question-item--accordion">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  condimentum maximus massa, non lacinia felis aliquet id.
-                  Suspendisse non diam tincidunt, rhoncus ex eget, maximus nibh.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum maximus massa, non lacinia
+                  felis aliquet id. Suspendisse non diam tincidunt, rhoncus ex eget, maximus nibh.
                 </p>
               </div>
             </div>
@@ -556,48 +476,38 @@
       <!-- END QUESTIONS -->
 
       <!-- TESTIMONIAL -->
-      <section id="testimonial">
+      <section id="testimonial" class="testimonial-section">
         <div class="container">
           <div class="testimonial-titles">
-            <h1>Testimonial Words</h1>
+            <h2>Testimonial Words</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div class="testimonial-carousel">
             <!-- sliders -->
-            <div
-              class="carousel slide"
-              data-ride="carousel"
-              id="testimonial-carousel"
-            >
+            <div class="carousel slide" data-ride="carousel" id="testimonial-carousel">
               <div class="carousel-inner">
                 <!-- slider 1 -->
                 <div class="carousel-item active" data-interval="1000">
                   <div class="carousel-items--grid row">
-                    <div
-                      class="carousel-item-container col-12 col-sm-6 col-md-6"
-                    >
+                    <div class="carousel-item-container col-12 col-sm-6 col-md-6">
                       <div class="carousel-item--data">
-                        <img src="./resources/testimonial-img1.jpg" alt="..." />
+                        <img src="resources/testimonial-img1.jpg" alt="jonathan doe testimonial picture" />
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur gravida diam ut elit congue
-                          vestibulum. Aliquam egestas elementum velit eget
-                          lobortis. Ut consectetur varius ipsum id sollicitudin.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida diam ut elit congue
+                          vestibulum. Aliquam egestas elementum velit eget lobortis. Ut consectetur varius ipsum id
+                          sollicitudin.
                         </p>
                       </div>
                       <p class="testimonial-item--author">Jonathan Doe</p>
                     </div>
                     <!-- Desktop only -->
-                    <div
-                      class="carousel-item-container carousel-aditional col-12 col-sm-6 col-md-6"
-                    >
+                    <div class="carousel-item-container carousel-aditional col-12 col-sm-6 col-md-6">
                       <div class="carousel-item--data">
-                        <img src="./resources/testimonial-img2.jpg" alt="..." />
+                        <img src="resources/testimonial-img2.jpg" alt="james author testimonial picture" />
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur gravida diam ut elit congue
-                          vestibulum. Aliquam egestas elementum velit eget
-                          lobortis. Ut consectetur varius ipsum id sollicitudin.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida diam ut elit congue
+                          vestibulum. Aliquam egestas elementum velit eget lobortis. Ut consectetur varius ipsum id
+                          sollicitudin.
                         </p>
                       </div>
                       <p class="testimonial-item--author">James Author</p>
@@ -607,31 +517,25 @@
                 <!-- slider 2 -->
                 <div class="carousel-item" data-interval="1000">
                   <div class="carousel-items--grid row">
-                    <div
-                      class="carousel-item-container col-12 col-sm-6 col-md-6"
-                    >
+                    <div class="carousel-item-container col-12 col-sm-6 col-md-6">
                       <div class="carousel-item--data">
-                        <img src="./resources/testimonial-img3.jpg" alt="..." />
+                        <img src="resources/testimonial-img3.jpg" alt="john doe testimonial picture" />
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur gravida diam ut elit congue
-                          vestibulum. Aliquam egestas elementum velit eget
-                          lobortis. Ut consectetur varius ipsum id sollicitudin.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida diam ut elit congue
+                          vestibulum. Aliquam egestas elementum velit eget lobortis. Ut consectetur varius ipsum id
+                          sollicitudin.
                         </p>
                       </div>
                       <p class="testimonial-item--author">John Doe</p>
                     </div>
                     <!-- Desktop only -->
-                    <div
-                      class="carousel-item-container carousel-aditional col-12 col-sm-6 col-md-6"
-                    >
+                    <div class="carousel-item-container carousel-aditional col-12 col-sm-6 col-md-6">
                       <div class="carousel-item--data">
-                        <img src="./resources/testimonial-img1.jpg" alt="..." />
+                        <img src="resources/testimonial-img1.jpg" alt="james doe 2 testimonial picture" />
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur gravida diam ut elit congue
-                          vestibulum. Aliquam egestas elementum velit eget
-                          lobortis. Ut consectetur varius ipsum id sollicitudin.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida diam ut elit congue
+                          vestibulum. Aliquam egestas elementum velit eget lobortis. Ut consectetur varius ipsum id
+                          sollicitudin.
                         </p>
                       </div>
                       <p class="testimonial-item--author">James Doe 2</p>
@@ -641,31 +545,25 @@
                 <!-- slider 3 -->
                 <div class="carousel-item" data-interval="1000">
                   <div class="carousel-items--grid row">
-                    <div
-                      class="carousel-item-container col-12 col-sm-6 col-md-6"
-                    >
+                    <div class="carousel-item-container col-12 col-sm-6 col-md-6">
                       <div class="carousel-item--data">
-                        <img src="./resources/testimonial-img2.jpg" alt="..." />
+                        <img src="resources/testimonial-img2.jpg" alt="jonathan joes testimonial picture" />
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur gravida diam ut elit congue
-                          vestibulum. Aliquam egestas elementum velit eget
-                          lobortis. Ut consectetur varius ipsum id sollicitudin.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida diam ut elit congue
+                          vestibulum. Aliquam egestas elementum velit eget lobortis. Ut consectetur varius ipsum id
+                          sollicitudin.
                         </p>
                       </div>
                       <p class="testimonial-item--author">Jonathan Joes</p>
                     </div>
                     <!--  Desktop only -->
-                    <div
-                      class="carousel-item-container carousel-aditional col-12 col-sm-6 col-md-6"
-                    >
+                    <div class="carousel-item-container carousel-aditional col-12 col-sm-6 col-md-6">
                       <div class="carousel-item--data">
-                        <img src="./resources/testimonial-img3.jpg" alt="..." />
+                        <img src="resources/testimonial-img3.jpg" alt="joestar doe testimonial picture" />
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur gravida diam ut elit congue
-                          vestibulum. Aliquam egestas elementum velit eget
-                          lobortis. Ut consectetur varius ipsum id sollicitudin.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida diam ut elit congue
+                          vestibulum. Aliquam egestas elementum velit eget lobortis. Ut consectetur varius ipsum id
+                          sollicitudin.
                         </p>
                       </div>
                       <p class="testimonial-item--author">Joestar Doe</p>
@@ -674,21 +572,15 @@
                 </div>
                 <!-- mobile only slider 4 -->
 
-                <div
-                  class="carousel-item carousel-aditional--mobile"
-                  data-interval="1000"
-                >
+                <div class="carousel-item carousel-aditional--mobile" data-interval="1000">
                   <div class="carousel-items--grid row">
-                    <div
-                      class="carousel-item-container col-12 col-sm-6 col-md-6"
-                    >
+                    <div class="carousel-item-container col-12 col-sm-6 col-md-6">
                       <div class="carousel-item--data">
-                        <img src="./resources/testimonial-img1.jpg" alt="..." />
+                        <img src="resources/testimonial-img1.jpg" alt="jhonny doe testimonial picture" />
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur gravida diam ut elit congue
-                          vestibulum. Aliquam egestas elementum velit eget
-                          lobortis. Ut consectetur varius ipsum id sollicitudin.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida diam ut elit congue
+                          vestibulum. Aliquam egestas elementum velit eget lobortis. Ut consectetur varius ipsum id
+                          sollicitudin.
                         </p>
                       </div>
                       <p class="testimonial-item--author">Jhonny Doe</p>
@@ -696,21 +588,15 @@
                   </div>
                 </div>
                 <!-- mobile only slider 5 -->
-                <div
-                  class="carousel-item carousel-aditional--mobile"
-                  data-interval="1000"
-                >
+                <div class="carousel-item carousel-aditional--mobile" data-interval="1000">
                   <div class="carousel-items--grid row">
-                    <div
-                      class="carousel-item-container col-12 col-sm-6 col-md-6"
-                    >
+                    <div class="carousel-item-container col-12 col-sm-6 col-md-6">
                       <div class="carousel-item--data">
-                        <img src="./resources/testimonial-img2.jpg" alt="..." />
+                        <img src="resources/testimonial-img2.jpg" alt="jhon cenna testimonial picture" />
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur gravida diam ut elit congue
-                          vestibulum. Aliquam egestas elementum velit eget
-                          lobortis. Ut consectetur varius ipsum id sollicitudin.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida diam ut elit congue
+                          vestibulum. Aliquam egestas elementum velit eget lobortis. Ut consectetur varius ipsum id
+                          sollicitudin.
                         </p>
                       </div>
                       <p class="testimonial-item--author">Jhon Cenna</p>
@@ -721,23 +607,11 @@
                 <!-- end slider 5 -->
               </div>
               <ol class="carousel-indicators">
-                <li
-                  data-target="#testimonial-carousel"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
+                <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#testimonial-carousel" data-slide-to="1"></li>
                 <li data-target="#testimonial-carousel" data-slide-to="2"></li>
-                <li
-                  data-target="#testimonial-carousel"
-                  class="carousel-indicator-mobile"
-                  data-slide-to="3"
-                ></li>
-                <li
-                  data-target="#testimonial-carousel"
-                  class="carousel-indicator-mobile"
-                  data-slide-to="4"
-                ></li>
+                <li data-target="#testimonial-carousel" class="carousel-indicator-mobile" data-slide-to="3"></li>
+                <li data-target="#testimonial-carousel" class="carousel-indicator-mobile" data-slide-to="4"></li>
               </ol>
             </div>
             <!-- end sliders -->
@@ -747,41 +621,31 @@
       <!-- END TESTIMONIAL -->
 
       <!-- CONTACT -->
-      <section id="contact">
+      <section id="contact" class="contact-section">
         <div class="container">
           <div class="contact-titles">
-            <h1>Get in touch</h1>
+            <h2>Get in touch</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <form>
             <div class="contact-container row">
-              <div class="col-12 col-sm-6 col-md-6">
+              <div class="contact-inputs col-12 col-sm-6 col-md-6">
                 <div class="row form-group">
-                  <input class="form-control" type="text" placeholder="Name" />
+                  <input class="col form-control" type="text" placeholder="Name" />
                 </div>
                 <div class="row form-group">
-                  <input
-                    class="form-control"
-                    type="email"
-                    placeholder="Email"
-                  />
+                  <input class="col form-control" type="email" placeholder="Email" />
                 </div>
                 <div class="row form-group">
-                  <input class="form-control" type="tel" placeholder="Phone" />
+                  <input class="col form-control" type="tel" placeholder="Phone" />
                 </div>
               </div>
-              <div class="contact-textarea col-12 col-sm-6 col-md-6">
-                <textarea
-                  class="form-control form-group"
-                  placeholder="Message"
-                  rows="6"
-                ></textarea>
+              <div class="contact-textarea col-12 col-sm-5 col-md-6">
+                <textarea class="col form-control form-group" placeholder="Message" rows="6"></textarea>
               </div>
             </div>
             <div class="contact-container row">
-              <button class="contact-button" type="submit">
-                SHOOT MESSAGE
-              </button>
+              <button class="col contact-button" type="submit">SHOOT MESSAGE</button>
             </div>
           </form>
         </div>
@@ -790,7 +654,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="main-footer">
+    <footer class="main-footer" class="main-footer-section">
       <div class="container">
         <p>Copyright Talos HTML Template | All Rights Reserved.</p>
         <div class="footer-social">
@@ -852,9 +716,7 @@
         <path d="M32 14h-3v-3h-3v3h-3v3h3v3h3v-3h3z"></path>
       </symbol>
       <symbol id="icon-facebook" viewBox="0 0 32 32">
-        <path
-          d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"
-        ></path>
+        <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
       </symbol>
       <symbol id="icon-twitter" viewBox="0 0 32 32">
         <path
