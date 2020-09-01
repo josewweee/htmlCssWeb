@@ -600,26 +600,23 @@ footer {
     text-align: center;
   }
 
-  .row {
+  .blog-information {
     margin-right: 0;
     margin-left: 0;
   }
 
   @media (min-width: 769px) {
-    .col-md-6 {
+    .blog-information-item {
       max-width: 48%;
-    }
-    .row {
-      justify-content: space-between;
     }
   }
 
   @media (min-width: 577px) {
-    .col-sm-6 {
+    .blog-information-item.col-sm-6 {
       max-width: 48%;
     }
 
-    .row {
+    .blog-information {
       justify-content: space-between;
     }
   }
@@ -797,7 +794,7 @@ footer {
   }
 
   .form-control {
-    border: 1.5px solid #e6e5e5;
+    border: 2px solid #e6e5e5;
     background-color: $sections-color;
     color: $secondary-color;
   }
