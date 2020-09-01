@@ -1,3 +1,4 @@
+import 'bootstrap';
 /* NAV BAR */
 const toggleButton = document.querySelector('.toggle-button');
 const navOptions = document.querySelector('.header-list--mobile');
@@ -8,7 +9,6 @@ toggleButton.addEventListener('click', (event) => {
 
 
 function scrollHandler(event){
-    console.log(event[0].target.id)
     const allNavButtons = document.querySelectorAll('.header-list--item');
     allNavButtons.forEach( btn => {
         btn.classList.remove('active')
