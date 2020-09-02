@@ -10599,7 +10599,7 @@ footer .fs1 {
   bottom: 5.6rem;
   justify-content: center;
   padding: 1.25rem;
-  width: -webkit-fill-available;
+  width: calc(100% - 1.87rem);
   margin-right: 1.87rem;
   opacity: 0;
   transition: opacity 1s linear;
@@ -10645,7 +10645,7 @@ footer .fs1 {
   position: absolute;
   top: 0;
   height: 100%;
-  width: -webkit-fill-available;
+  width: calc(100% - 1.87em);
   margin-right: 1.87rem;
   color: #ffffff;
   opacity: 0;
@@ -10674,7 +10674,7 @@ footer .fs1 {
   width: 0.8em;
   height: 0.8em;
   background-color: unset;
-  color: #71bda3;
+  color: #64c6ae;
   transform: rotateY(180deg);
 }
 

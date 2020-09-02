@@ -301,7 +301,7 @@ footer {
   font-weight: 900;
 }
 
-//menu hamburguesa
+//burger menu
 .toggle-button {
   width: 3rem;
   background: transparent;
@@ -325,7 +325,7 @@ footer {
   display: block;
   margin: 0.3rem 0;
 }
-//fin menu hamburguesa
+//end burger menu
 
 .header-list {
   list-style: none;
@@ -503,7 +503,7 @@ footer {
   bottom: 5.6rem;
   justify-content: center;
   padding: 1.25rem;
-  width: -webkit-fill-available;
+  width: calc(100% - 1.87rem);
   margin-right: 1.87rem;
   opacity: 0;
   transition: opacity 1s linear;
@@ -547,11 +547,11 @@ footer {
 
 .portfolio-gallery-item--hover {
   display: inherit;
-  background-color: #64c6aed6;
+  background-color: $ligth-main;
   position: absolute;
   top: 0;
   height: 100%;
-  width: -webkit-fill-available;
+  width: calc(100% - 1.87em); // 100% width - parent padding
   margin-right: 1.87rem;
   color: $white;
   opacity: 0;
@@ -578,7 +578,7 @@ footer {
       width: 0.8em;
       height: 0.8em;
       background-color: unset;
-      color: #71bda3;
+      color: $main-color;
       transform: rotateY(180deg);
     }
   }
