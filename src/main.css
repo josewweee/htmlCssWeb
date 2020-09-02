@@ -10281,7 +10281,14 @@ footer .fs1 {
 }
 .main-banner-section p {
   color: #ffffff;
+  margin: auto 5%;
   margin-top: 1rem;
+}
+@media (min-width: 577px) {
+  .main-banner-section p {
+    margin: unset;
+    margin-top: 1rem;
+  }
 }
 .main-banner-section .banner-buttons {
   margin-top: 2rem;
@@ -10716,7 +10723,7 @@ footer .fs1 {
 }
 
 .blog-information-item {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   margin-bottom: 1.5rem;
   text-align: left;
   padding: 3rem;
@@ -10730,7 +10737,7 @@ footer .fs1 {
   }
 }
 .blog-information-item h5 {
-  color: #808080;
+  color: #424242;
   font-weight: 900;
 }
 .blog-information-item span {

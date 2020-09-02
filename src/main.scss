@@ -158,7 +158,12 @@ footer {
 
   p {
     color: $white;
+    margin: auto 5%;
     margin-top: 1rem;
+    @media (min-width: 577px) {
+      margin: unset;
+      margin-top: 1rem;
+    }
   }
 
   .banner-buttons {
@@ -629,7 +634,7 @@ footer {
 }
 
 .blog-information-item {
-  background-color: $sections-color;
+  background-color: $white;
   margin-bottom: 1.5rem;
   text-align: left;
   padding: 3rem;
@@ -642,7 +647,7 @@ footer {
   }
 
   h5 {
-    color: $secondary-color;
+    color: $dark-secondary;
     font-weight: 900;
   }
 
