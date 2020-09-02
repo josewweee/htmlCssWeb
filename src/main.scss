@@ -19,21 +19,9 @@
 */
 
 /* FONTS */
-@font-face {
-  font-family: "et-line";
-  src: url("../resources/et-line-font/fonts/et-line.woff") format("woff"),
-    url("../resources/et-line-font/fonts/et-line.ttf") format("truetype"),
-    url("../resources/et-line-font/fonts/et-line.svg#et-line") format("svg");
-}
-/* END FONTS */
-
+@import "fonts.scss";
 /* COLORS */
-$main-color: #64c6ae;
-$sections-color: #f9f9f9;
-$secondary-color: #808080;
-$white: #ffffff;
-$black: #000000;
-/* END COLORS */
+@import "variables.scss";
 
 /* CHANGING DEFAULT BOOTSTRAP GRID BREAKS AND MAX WIDTHS */
 $grid-breakpoints: (
@@ -48,6 +36,7 @@ $container-max-widths: (
   sm: 640px,
   md: 1140px,
 );
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 /* END BOOTSTRAP MODIFICATIONS */
 
@@ -151,7 +140,7 @@ footer {
     margin: auto;
   }
 
-  h1 {
+  .banner-title {
     color: $white;
     font-size: 1.9em;
     font-weight: 900;
@@ -658,7 +647,8 @@ footer {
 
 .blog-information-item:hover {
   overflow: hidden;
-  background: url("../resources/hover-image.jpg") -1.25rem / cover;
+  background: url("../resources/hover-image.jpg") 0 / cover no-repeat border-box;
+  background-position-y: -1.25rem;
   h5 {
     color: $main-color;
   }

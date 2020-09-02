@@ -19,9 +19,10 @@
 16. footer
 */
 /* FONTS */
+/* FONTS */
 @font-face {
   font-family: "et-line";
-  src: url("/et-line.35cda6d6.woff") format("woff"), url("/et-line.6c5b9196.ttf") format("truetype"), url("/et-line.aa425a5a.svg#et-line") format("svg");
+  src: url("/7e14af15772d0bbe9e585a8035cda6d6.woff") format("woff"), url("/7449405a7da1d5f00d109ac16c5b9196.ttf") format("truetype"), url("/c62e2e81ce60437c27988346aa425a5a.svg#et-line") format("svg");
 }
 /* END FONTS */
 /* COLORS */
@@ -9966,11 +9967,11 @@ footer .fs1 {
   height: 100%;
 }
 .main-banner-section .banner-item--1 {
-  background: url("/home-bg-2.f9bef1b1.jpg") left 50% bottom 20%/cover no-repeat border-box border-box;
+  background: url("/bcdfe7ab00f0657e03e41ca0f9bef1b1.jpg") left 50% bottom 20%/cover no-repeat border-box border-box;
   height: 100%;
 }
 .main-banner-section .banner-item--2 {
-  background: url("/home-bg.3c1f16f5.jpg") left 60% bottom 50%/cover no-repeat border-box border-box;
+  background: url("/932b3e78ee2934bd8ac32ec63c1f16f5.jpg") left 60% bottom 50%/cover no-repeat border-box border-box;
   height: 100%;
 }
 .main-banner-section .banner-content {
@@ -9979,7 +9980,7 @@ footer .fs1 {
   margin-left: 2%;
   margin: auto;
 }
-.main-banner-section h1 {
+.main-banner-section .banner-title {
   color: #ffffff;
   font-size: 1.9em;
   font-weight: 900;
@@ -10448,7 +10449,8 @@ footer .fs1 {
 
 .blog-information-item:hover {
   overflow: hidden;
-  background: url("/hover-image.1072890c.jpg") -1.25rem/cover;
+  background: url("/19fa80fde0dc9417902a95551072890c.jpg") 0/cover no-repeat border-box;
+  background-position-y: -1.25rem;
 }
 .blog-information-item:hover h5 {
   color: #64c6ae;

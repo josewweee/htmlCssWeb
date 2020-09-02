@@ -19,6 +19,7 @@
 16. footer
 */
 /* FONTS */
+/* FONTS */
 @font-face {
   font-family: "et-line";
   src: url("../resources/et-line-font/fonts/et-line.woff") format("woff"), url("../resources/et-line-font/fonts/et-line.ttf") format("truetype"), url("../resources/et-line-font/fonts/et-line.svg#et-line") format("svg");
@@ -9979,7 +9980,7 @@ footer .fs1 {
   margin-left: 2%;
   margin: auto;
 }
-.main-banner-section h1 {
+.main-banner-section .banner-title {
   color: #ffffff;
   font-size: 1.9em;
   font-weight: 900;
@@ -10448,7 +10449,8 @@ footer .fs1 {
 
 .blog-information-item:hover {
   overflow: hidden;
-  background: url("../resources/hover-image.jpg") -1.25rem/cover;
+  background: url("../resources/hover-image.jpg") 0/cover no-repeat border-box;
+  background-position-y: -1.25rem;
 }
 .blog-information-item:hover h5 {
   color: #64c6ae;
