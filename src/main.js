@@ -20,8 +20,14 @@ function scrollHandler(event){
 
 const myIntersectionObserver = new IntersectionObserver(scrollHandler, {
     root: document.querySelector('body'),
-    threshold: 0.7
+    threshold: 1
 });
+
+const myIntersectionObserverLessTreshold = new IntersectionObserver(scrollHandler, {
+    root: document.querySelector('body'),
+    threshold: 0.5
+});
+
 
 const bannerSection = document.querySelector('#main-banner');
 const servicesSection = document.querySelector('#services');
@@ -31,10 +37,15 @@ const portfolioSection = document.querySelector('#portfolio');
 const blogSection = document.querySelector('#blog');
 const contactSection = document.querySelector('#contact');
 
-const sections = [bannerSection, servicesSection, aboutSection, teamSection,
-                portfolioSection, blogSection, contactSection]
+const sections = [teamSection, portfolioSection, bannerSection, 
+                servicesSection, aboutSection, blogSection, contactSection]
 
-for(let i = 0; i < sections.length; i++){
+for(let i = 0; i < 2; i++){
+    myIntersectionObserverLessTreshold.observe(sections[i]);
+}
+                
+
+for(let i = 2; i < sections.length; i++){
     myIntersectionObserver.observe(sections[i]);
 }
 
